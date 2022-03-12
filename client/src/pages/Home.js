@@ -1,6 +1,5 @@
 import React from 'react';
 import ThoughtList from '../components/ThoughtList';
-
 import ThoughtForm from '../components/ThoughtForm';
 import FriendList from '../components/FriendList';
 
@@ -27,7 +26,10 @@ const Home = () => {
           {loading ? (
             <div>Loading...</div>
           ) : (
-            <ThoughtList thoughts={thoughts} title="Some Feed for Thought(s)..." />
+            <ThoughtList
+              thoughts={thoughts}
+              title="Some Feed for Thought(s)..."
+            />
           )}
         </div>
         {loggedIn && userData ? (

@@ -11,11 +11,7 @@ const ReactionList = ({ reactions }) => {
         {reactions &&
           reactions.map(reaction => (
             <p className="pill mb-3" key={reaction._id}>
-<<<<<<< HEAD
               {reaction.reactionBody} //{' '}
-=======
-              {reaction.reactionBody} {'// '}
->>>>>>> develop
               <Link to={`/profile/${reaction.username}`} style={{ fontWeight: 700 }}>
                 {reaction.username} on {reaction.createdAt}
               </Link>
@@ -26,8 +22,4 @@ const ReactionList = ({ reactions }) => {
   );
 };
 
-<<<<<<< HEAD
 export default ReactionList;
-=======
-export default ReactionList;
->>>>>>> develop
