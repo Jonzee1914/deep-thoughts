@@ -10,7 +10,11 @@ const ThoughtList = ({ thoughts, title }) => {
     <div>
       <h3>{title}</h3>
       {thoughts &&
+<<<<<<< HEAD
         thoughts.map(thought => (
+=======
+        thoughts.map((thought) => (
+>>>>>>> develop
           <div key={thought._id} className="card mb-3">
             <p className="card-header">
               <Link
